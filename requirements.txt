@@ -1,0 +1,12 @@
+CythonGSL==0.2.2
+Pillow==4.2.1
+cython==0.27
+dipy==0.12
+matplotlib==2.0.2
+nibabel==2.1.0
+numpy==1.13.1 --no-binary numpy
+openpyxl==2.4.8
+pandas==0.20.3
+scikit-learn==0.19.0
+scipy==0.19.1
+six==1.11.0
