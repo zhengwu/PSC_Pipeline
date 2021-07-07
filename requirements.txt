@@ -1,5 +1,5 @@
 CythonGSL==0.2.2
-Pillow==4.2.1
+Pillow==8.2.0
 cython==0.27
 dipy==0.12
 matplotlib==2.0.2
