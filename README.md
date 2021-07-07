@@ -1,4 +1,4 @@
-This PSC pipeline is developed with the help of [scilpy](https://github.com/scilus/scilpy) under python 2.7. So to use this PSC pipeline, an old python 2 scilpy should be installed first. Here I breifly describe how to install and use it.
+This PSC pipeline is developed with the help of [scilpy](https://github.com/scilus/scilpy) under python 2.7. So to use this PSC pipeline, an old python 2 scilpy should be installed first. Here I breifly describe how to install and use PSC.
 
 
 
