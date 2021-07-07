@@ -1,0 +1,9 @@
+To setup this PSC pipeline, unzip it and put it in a folder and change the environmental variables in your
+.bashrc or .bash_profile:
+
+export PATH="/home/zzhang6/Software/PSC_Pipeline/scripts:$PATH"
+export PYTHONPATH="/home/zzhang6/Software/PSC_Pipeline$PYTHONPATH"
+
+Now you should be able to run commands in the example folder.
+
+Contact zhengwustat@gmail.com if you have any issue.
