@@ -9,7 +9,7 @@ This PSC pipeline is developed with the help of [scilpy](https://github.com/scil
 
   ```
   export PATH="/home/username/Software/PSC_Pipeline/scripts:$PATH"
-  export PYTHONPATH="/home/username/Software/PSC_Pipeline$PYTHONPATH"
+  export PYTHONPATH="/home/username/Software/PSC_Pipeline:$PYTHONPATH"
   ```
 
   Now you should be able to run commands in the `scripts` folder.
