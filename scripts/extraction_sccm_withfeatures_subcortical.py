@@ -167,10 +167,10 @@ def buildArgsParser():
                    help='Indicator of saving partial connection or the whole connection, False -'+
                    'partial connection, True - whole connection.')
 
-    p.add_argument('--save_sl', action='store', metavar=' ', default = False,
+    p.add_argument('--save_sl', action='store_true', metavar=' ',
                    help='save the streamlines or not.')
 
-    p.add_argument('--save_diffusion', action='store', metavar=' ', default = False,
+    p.add_argument('--save_diffusion', action='store_true', metavar=' ',
                    help='save the diffusion metrics along streamlines or not.')
 
 

@@ -166,10 +166,10 @@ def buildArgsParser():
     p.add_argument('pre', action='store', metavar='PRE',  type=str, default = 'PSC',
                    help='prefix for the name of saved files.')
 
-    p.add_argument('--save_sl', action='store', metavar=' ', default = False,
+    p.add_argument('--save_sl', action='store_true', metavar='SAVE_SL',
                    help='save the streamlines or not.')
 
-    p.add_argument('--save_diffusion', action='store', metavar=' ', default = False,
+    p.add_argument('--save_diffusion', action='store_true', metavar='SAVE_DIFFUSION',
                    help='save the diffusion metrics along streamlines or not.')
 
     return p
