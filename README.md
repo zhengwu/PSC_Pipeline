@@ -4,12 +4,12 @@ This PSC pipeline is developed with the help of [scilpy](https://github.com/scil
 
 -  Step 1. Install a python2 version of scilpy through an installation of one of its variants `SET`. Instruction can be found [here](https://set-documentation.readthedocs.io/en/latest/setup/python.html#python-2-7-for-set-dev)
 
-- Step 2.  To setup the PSC pipeline,  unzip it to a folder (e.g., `/home/username/Software/PSC_Pipeline`) and change the environmental variables in your
+- Step 2.  To setup the PSC pipeline,  clone the PSC pipeline: git clone https://github.com/zhengwu/PSC_Pipeline.git and change the environmental variables in your
   `.bashrc` or `.bash_profile`(in linux of Mac OS):
 
   ```
   export PATH="/home/username/Software/PSC_Pipeline/scripts:$PATH"
-  export PYTHONPATH="/home/username/Software/PSC_Pipeline$PYTHONPATH"
+  export PYTHONPATH="/home/username/Software/PSC_Pipeline:$PYTHONPATH"
   ```
 
   Now you should be able to run commands in the `scripts` folder.
