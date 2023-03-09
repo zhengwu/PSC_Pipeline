@@ -167,10 +167,10 @@ def buildArgsParser():
                    help='Indicator of saving partial connection or the whole connection, False -'+
                    'partial connection, True - whole connection.')
 
-    p.add_argument('--save_sl', action='store_true', metavar=' ',
+    p.add_argument('--save_sl', action='store_true',
                    help='save the streamlines or not.')
 
-    p.add_argument('--save_diffusion', action='store_true', metavar=' ',
+    p.add_argument('--save_diffusion', action='store_true',
                    help='save the diffusion metrics along streamlines or not.')
 
 
@@ -381,7 +381,7 @@ def main():
         sio.savemat(cmCountMatrix_processed_fname, {'cm': CM_after_ourlierremove})
 
         # save the streamline matrix
-        if(args.save_sl==True):
+        if(args.save_sl):
             sio.savemat(cmStreamlineMatrix_fname, {'slines': cell_streamlines})
             sio.savemat(RoiInfo_fname, {'ROIinfo': cell_id})
             print args.sub_id + 'cell_streamlines.mat, ROIinfo.mat has been saved'
@@ -436,7 +436,7 @@ def main():
                 tmp_fa = cm_fa_curve[i, j]
                 tmp_fa = list(tmp_fa)
                 cell_fa.append(tmp_fa)
-        if(args.save_diffusion==True):
+        if(args.save_diffusion):
             sio.savemat(args.sub_id + "_" +args.pre + "_allbrain" + "_cm_processed_sfa_100.mat", {'sfa': cell_fa})
             print args.pre + '_allbrain" + "_cm_processed_sfa_100.mat' + ' has been saved'
 

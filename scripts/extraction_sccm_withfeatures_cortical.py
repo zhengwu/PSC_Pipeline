@@ -166,10 +166,10 @@ def buildArgsParser():
     p.add_argument('pre', action='store', metavar='PRE',  type=str, default = 'PSC',
                    help='prefix for the name of saved files.')
 
-    p.add_argument('--save_sl', action='store_true', metavar='SAVE_SL',
+    p.add_argument('--save_sl', action='store_true',
                    help='save the streamlines or not.')
 
-    p.add_argument('--save_diffusion', action='store_true', metavar='SAVE_DIFFUSION',
+    p.add_argument('--save_diffusion', action='store_true',
                    help='save the diffusion metrics along streamlines or not.')
 
     return p
@@ -333,7 +333,7 @@ def main():
     sio.savemat(cmCountMatrix_processed_fname,{'cm':CM_after_ourlierremove})
 
     # save the streamline matrix
-    if(args.save_sl==True):
+    if(args.save_sl):
         sio.savemat(cmStreamlineMatrix_fname, {'slines': cell_streamlines})
         sio.savemat(RoiInfo_fname, {'ROIinfo': cell_id})
         print args.sub_id + 'cell_streamlines.mat, ROIinfo.mat has been saved'
@@ -388,7 +388,7 @@ def main():
             tmp_fa = cm_fa_curve[i, j]
             tmp_fa = list(tmp_fa)
             cell_fa.append(tmp_fa)
-    if(args.save_diffusion==True):
+    if(args.save_diffusion):
         sio.savemat(args.sub_id + "_" +args.pre+"_cm_processed_sfa_100.mat",{'sfa':cell_fa})
         print 'cell_fa.mat, fa_roiinfo.mat have been saved'
 
